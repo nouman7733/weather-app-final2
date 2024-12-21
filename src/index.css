@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+  background-color: #e0f7fa; /* Light blue background */
+  font-family: 'Arial', sans-serif; /* Font family */
+}
+
+
+/* Container Styles */
+.container {
+  padding: 15px; /* Reduced padding for mobile */
+  border-radius: 10px; /* Adjust border radius */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+  background-color: #ffffff; /* White background */
+}
+
+.container h1 svg {
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #00796b; /* Match icon color with theme */
+}
+
+.search svg {
+  font-size: 1.5rem; /* Icon size in search field */
+  color: #004d40; /* Darker color for search icon */
+}
+
+/* Header Styles */
+h1 {
+  color: #00796b; /* Header color */
+  font-size: 2rem; /* Adjusted font size for mobile */
+}
+
+/* Location Text */
+.location p {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #004d40; /* Darker text color */
+}
+
+/* Button Styles */
+button {
+  background-color: #00796b; /* Button background */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px; /* Adjusted padding */
+  width: 100%; /* Full width button */
+  cursor: pointer;
+}
+
+.forecast-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add some padding */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.forecast-item {
+  text-align: center; /* Center text for each item */
+  margin: 0 10px; /* Add margin between items */
+}
+
+button:hover {
+  background-color: #004d40; /* Darker shade on hover */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.8rem; /* Smaller header size */
+  }
+
+  .location p {
+      font-size: 1rem; /* Smaller location text */
+  }
+
+  .container {
+      padding: 10px; /* Less padding */
+  }
+
+  button {
+      padding: 8px; /* Smaller button padding */
+  }
+}
